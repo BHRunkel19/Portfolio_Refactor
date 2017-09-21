@@ -14,7 +14,7 @@ export default class About extends Component {
           I let my Git rock til my brand popped,
           working at the Iron Yard, trying to rise like a stock.
 
-          Way back, when I had that corporate job that was wack,
+          Way back, when I had that dead-end job that was wack,
           that was when I took a step back.
 
           Money was the mission, happiness was missin.

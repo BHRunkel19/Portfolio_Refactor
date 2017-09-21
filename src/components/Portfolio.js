@@ -20,7 +20,7 @@ class Portfolio extends Component {
           </div>
           <div id="image7" className="images">
           </div>
-          <div id="image7" className="images">
+          <div id="image8" className="images">
           </div>
         </div>
       </div>
