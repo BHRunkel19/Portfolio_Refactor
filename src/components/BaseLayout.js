@@ -8,7 +8,7 @@ export default class BaseLayout extends Component {
       <div className="base_layout">
       <div className="header">
         <div className="brandon">
-          <NavLink activeClassName="selected" exact to="/"><div className="link_box">Brandon</div></NavLink>
+          <NavLink activeClassName="selected" exact to="/"><div className="link_box_logo">BR</div></NavLink>
           </div>
 
         <nav className="navigation">

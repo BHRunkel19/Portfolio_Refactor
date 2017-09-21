@@ -1,7 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Lobster|Lora');
+@import url('https://fonts.googleapis.com/css?family=Cardo|Righteous|Sedgwick+Ave+Display|Teko');
 
 body{
   height: 100%;
+}
+
+/*This section controls the video background*/
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
 }
 
 a{
@@ -24,10 +44,14 @@ a:active{
   padding-left: 25px;
 }
 
-.canvas{
-  position: absolute;
-  top: 0;
-  left: 0;
+.link_box{
+  font-family: 'Teko', sans-serif;
+  font-size: 20px;
+}
+
+.link_box_logo{
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 24px;
 }
 
 .navigation{
@@ -60,6 +84,9 @@ a:active{
 .footer{
   width: 100%;
   height: 100px;
+  background-color: white;
+  position: absolute;
+  z-index: 1;
   display: flex;
   justify-content: flex-end;
   border-top: 1px solid black;
@@ -73,15 +100,23 @@ a:active{
   height: 100%;
 }
 
+.side_bar p{
+  font-family: 'Teko', sans-serif;
+}
+
 .landing_title{
+  color: white;
   text-align: center;
   font-size: 84px;
+  font-family: 'Sedgwick Ave Display', cursive;
   padding-top: 120px;
   text-transform: uppercase;
   margin-bottom: 0;
 }
 
 .landing_subtitle{
+  color: white;
+  font-family: 'Teko', sans-serif;
   font-size: 36px;
   text-align: center;
   padding-top: 25px;
@@ -109,7 +144,7 @@ a:active{
 }
 
 .about_rap{
-  width: 65%;
+  width: 50%;
   margin: 0 auto;
   line-height: 2;
   text-align: center;
@@ -121,15 +156,125 @@ a:active{
 
 .portfolio{
   margin-top: 100px;
-  height: 500px;
+  height: 1200px;
 }
 
 .portfolio h1{
   text-align: center;
 }
 
-.image_grid{
-  width: 75%; 
+.image_grid_flip{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.images{
+  margin: 10px;
+}
+
+#image1{
+  height: 200px;
+  width: 45%;
+  border-radius: 20px;
+  background-image: url("./images/Runks_Bunks Sample Image.png");
+  background-size: cover;
+}
+
+#image2{
+  height: 200px;
+  width: 45%;
+  border-radius: 20px;
+  background-image: url("./images/Game of Words.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#image3{
+  height: 200px;
+  width: 45%;
+  border-radius: 20px;
+  background-image: url("./images/Dumbbells_Donuts.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#image4{
+  height: 200px;
+  width: 45%;
+  border-radius: 20px;
+  background-image: url("./images/music-sharing-app-react.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#image5{
+  height: 200px;
+  width: 45%;
+  border-radius: 20px;
+  background-image: url("./images/BeatBot.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#image6{
+  height: 200px;
+  width: 45%;
+  border-radius: 20px;
+  background-image: url("./images/Mars_Rover.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#image7{
+  height: 200px;
+  width: 45%;
+  border-radius: 20px;
+  background-image: url("./images/javascript_calculator.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#image8{
+  height: 200px;
+  width: 45%;
+  border-radius: 20px;
+  background-image: url("./images/scrum-monkey.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/*Card Flip*/
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.images:hover .overlay {
+  height: 100%;
+  cursor: pointer; 
+}
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 .contact{

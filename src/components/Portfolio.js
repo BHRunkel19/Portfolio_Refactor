@@ -5,12 +5,23 @@ class Portfolio extends Component {
     return (
       <div className="portfolio">
         <h1>The Latest & Greatest</h1>
-        <div className="image_grid">
-          <div className="image1"></div>
-          <div className="image2"></div>
-          <div className="image3"></div>
-          <div className="image4"></div>
-          <div className="image5"></div>
+        <div className="image_grid_flip" ontouchstart="this.classList.toggle('hover')">
+          <div id="image1" className="images">
+          </div>
+          <div id="image2" className="images">
+          </div>
+          <div id="image3" className="images">
+          </div>
+          <div id="image4" className="images">
+          </div>
+          <div id="image5" className="images">
+          </div>
+          <div id="image6" className="images">
+          </div>
+          <div id="image7" className="images">
+          </div>
+          <div id="image7" className="images">
+          </div>
         </div>
       </div>
     );
