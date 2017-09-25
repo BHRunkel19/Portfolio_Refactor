@@ -29,9 +29,9 @@ export default class BaseLayout extends Component {
         {this.props.children}
 
         <footer className="footer">
-          <div className="side_bar">
-            <p>© Copyright Brandon Runkel, 2017</p>
-          </div>
+            <div className="side_bar">
+              <p>© Copyright Brandon Runkel, 2017</p>
+            </div>
           </footer>
         </div>
       )

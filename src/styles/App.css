@@ -40,7 +40,7 @@ a:active{
 }
 
 .brandon{
-  width: 20%;
+  width: 10%;
   padding-left: 25px;
 }
 
@@ -69,6 +69,7 @@ a:active{
   padding-top: 25px;
   background: white;
   position: fixed;
+  z-index: 2;
   top: 0;
   overflow: hidden;
   border-bottom: 1px solid black;
@@ -78,12 +79,12 @@ a:active{
 }
 
 .app{
-  height: 550px;
+  height: 600px;
 }
 
 .footer{
   width: 100%;
-  height: 100px;
+  height: 170px;
   background-color: white;
   position: absolute;
   z-index: 1;
@@ -96,12 +97,23 @@ a:active{
   padding: 25px 25px 0px 0px;
 }
 
+#quote{
+  color: white;
+  font-family: "Teko", sans-serif;
+  width: 100%;
+  font-size: 22px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
 .side_bar{
   height: 100%;
 }
 
 .side_bar p{
   font-family: 'Teko', sans-serif;
+  padding-top: 50px;
 }
 
 .landing_title{
@@ -111,7 +123,9 @@ a:active{
   font-family: 'Sedgwick Ave Display', cursive;
   padding-top: 120px;
   text-transform: uppercase;
-  margin-bottom: 0;
+  margin: 50px auto;
+  width: 50%;
+  border-bottom: 1px dashed white;
 }
 
 .landing_subtitle{
@@ -119,8 +133,10 @@ a:active{
   font-family: 'Teko', sans-serif;
   font-size: 36px;
   text-align: center;
-  padding-top: 25px;
-  margin: 0;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  border-bottom: 1px dashed white;
+  width: 50%;
 }
 
 .side_bar{
@@ -133,14 +149,26 @@ a:active{
 }
 
 .about{
-  height: 500px;
+  height: 1100px;
+  font-family: 'Teko', sans-serif;
+  font-size: 24px;
+  background: linear-gradient(black, grey);
 }
 
 .about_title{
-  margin-top: 100px;
+  color: white;
+  margin-top: 25px;
   text-align: center;
   display: flex;
   align-items: center;
+}
+
+.about_content{
+  padding: 50px;
+}
+
+.about_content h1{
+  border-bottom: 2px solid white;
 }
 
 .about_rap{
@@ -150,20 +178,35 @@ a:active{
   text-align: center;
 }
 
+.profile_pic{
+  height: 200px;
+  border-radius: 100px;
+  opacity: 0.8;
+}
+
 .sign-off{
   font-weight: bold;
+  font-family: 'Sedgwick Ave Display', cursive;
 }
 
 .portfolio{
-  margin-top: 100px;
-  height: 1200px;
+  margin-top: 50px;
+  height: 1400px;
+  background: linear-gradient(black, grey);
 }
 
 .portfolio h1{
+  height: 50px;
+  color: white;
+  padding-top: 60px;
   text-align: center;
+  font-family: 'Teko', sans-serif;
+  text-transform: uppercase;
+  text-decoration: underline;
 }
 
-.image_grid_flip{
+.image_grid{
+  padding-top: 20px;
   width: 80%;
   margin: 0 auto;
   display: flex;
@@ -172,80 +215,144 @@ a:active{
 }
 
 .images{
-  margin: 10px;
+  margin: 25px;
+  box-shadow: 10px 10px 10px white;
 }
 
-#image1{
-  height: 200px;
-  width: 45%;
-  border-radius: 20px;
-  background-image: url("./images/Runks_Bunks Sample Image.png");
-  background-size: cover;
+.container {
+  position: relative;
+  margin: 25px auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
-#image2{
-  height: 200px;
-  width: 45%;
-  border-radius: 20px;
-  background-image: url("./images/Game of Words.png");
-  background-size: cover;
-  background-position: center;
+.image {
+  display: block;
+  width: 80%;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 25px;
+  cursor: pointer;
 }
 
-#image3{
-  height: 200px;
-  width: 45%;
-  border-radius: 20px;
-  background-image: url("./images/Dumbbells_Donuts.png");
-  background-size: cover;
-  background-position: center;
+.overlay {
+  position: absolute;
+  bottom: 0;
+  border-radius: 25px;
+  background-color: white;
+  overflow: hidden;
+  width: 80%;
+  display: flex;
+  height: 0;
+  transition: .5s ease;
+  cursor: pointer;
 }
 
-#image4{
-  height: 200px;
-  width: 45%;
-  border-radius: 20px;
-  background-image: url("./images/music-sharing-app-react.png");
-  background-size: cover;
-  background-position: center;
+.container:hover .overlay {
+  height: 100%;
 }
 
-#image5{
-  height: 200px;
-  width: 45%;
-  border-radius: 20px;
-  background-image: url("./images/BeatBot.png");
-  background-size: cover;
-  background-position: center;
-}
-
-#image6{
-  height: 200px;
-  width: 45%;
-  border-radius: 20px;
-  background-image: url("./images/Mars_Rover.png");
-  background-size: cover;
-  background-position: center;
-}
-
-#image7{
-  height: 200px;
-  width: 45%;
-  border-radius: 20px;
-  background-image: url("./images/javascript_calculator.png");
-  background-size: cover;
-  background-position: center;
-}
-
-#image8{
-  height: 200px;
-  width: 45%;
-  border-radius: 20px;
-  background-image: url("./images/scrum-monkey.png");
-  background-size: cover;
-  background-position: center;
+.text {
+  white-space: nowrap;
+  color: black;
+  font-family: 'Teko', sans-serif;
+  font-size: 32px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 .contact{
-  margin-top: 100px;
+  margin-top: 50px;
+  height: 500px;
+  background: linear-gradient(black, grey);
+}
+
+.contact_title{
+  padding-top: 50px;
+  font-family: 'Teko', sans-serif;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: white;
+  text-align: center;
+}
+
+.social_links{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.social_link_box{
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 2px white;
+  margin: 25px;
+  padding: 20px;
+}
+
+.social_link_box p{
+  text-align: center;
+  font-family: "Righteous", cursive;
+  color: white;
+  text-transform: uppercase;
+}
+
+.social_link_box:active{
+  box-shadow: 0 2px 0 white;
+}
+
+#twitter{
+  border-radius: 50px;
+  height: 100px;
+  width: 100px;
+}
+
+#instagram{
+  height: 100px;
+}
+
+#github{
+  height: 100px;
+}
+
+.more_contact_info p{
+  text-align: center;
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+.more_contact_info span{
+  color: white;
+  text-decoration: underline;
+}
+
+/*Responsive Layouts*/
+
+@media (max-width: 760px){
+  .social_links{
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+  }
+  .contact{
+    height: 1000px;
+  }
+  .portfolio{
+    height: 2400px;
+  }
+  .image_grid{
+    display: block;
+  }
+  .container{
+    width: 80%;
+  }
+  .about{
+    height: 1600px;
+  }
 }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ProfilePic from '../styles/images/profile_pic.jpg';
 
 export default class About extends Component {
   render() {
@@ -33,9 +34,10 @@ export default class About extends Component {
           Never look back and don't let others take the credit.
 
           This is where I am, this is where I want to be,
-          thanks for reading, stay tuned and see!
+          thanks for reading, stay tuned and see.
           </p>
-          <p className="sign-off">BR</p>
+          <p className="sign-off">-- Brandon --</p>
+          <img src={ProfilePic} className="profile_pic" alt="pic of brandon"/>
         </div>
       </div>
     </div>
